@@ -1,0 +1,189 @@
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    background-color: white;
+    font-family: Fredoka;
+}
+.Contenedor__header {
+    width: 100%;
+    padding: 0;
+}
+/*FirstBike*/
+.Contenedor__FirsBike {
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    margin-top: 10px;
+    margin-left: 40px;
+    padding: 0;
+}
+.Contenedor__Iconos {
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    align-items: start;
+    gap: 7px;
+    margin-right: 10px;
+    padding: 0;
+}
+
+.Imagen__Icono:hover {
+    transform: scale(1.1);
+}
+.Imagen__Icono {
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+}
+/*Menu de navegacion*/
+.nav__ul {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    
+}
+.nav__item {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    min-height: 50px;
+    max-height: 60px;
+}
+.Enlace__item {
+    color: black;
+    font-size: 1.2rem;
+    font-weight: bold;
+    
+
+}
+.Enlace__item:hover {
+    border-radius: 5px;
+    color: #52b788;
+    transform: scale(1.1); 
+}
+#LogoBuy {
+    width: 50px;
+    width: 50px;
+    border-radius: 50%;
+    margin-left: 200px;
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+    
+}
+#LogoBuy:hover {
+    transform: scale(1.1); 
+}
+#buyshop {
+    position: absolute;
+    bottom: 50px;
+    left: 230px;
+}
+.Contenedor__buy {
+    position: relative;
+}
+/*Main*/
+.Contenedor__main {
+    margin-top: 0;
+    width: 100%;
+    display: flex;
+}
+/*Hijo*/
+.Cont_60 {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+}
+/*Nieto*/
+.Contenedor__video {
+    display: flex;
+    margin-left: 38px;
+    gap: 30px;
+    justify-content: start;
+    align-items: center;
+}
+/*Bisnieto*/
+.Video {
+    width: 47%;
+}
+/*Hijo*/
+.Cont_40 {
+    width: 40%;
+}
+/*Nieto*/
+.Contenedor__Bike {
+    display: flex;
+    position: relative;
+}
+#Bike_Imagen {
+    width: 85.6%;
+}
+#Years__Imagen {
+    position: absolute;
+    z-index: 10;
+    bottom: 0;
+    width: 200px;
+    height: 100px;
+}
+.Contenedor__Redes {
+    display: flex;
+    margin-left: 38px;
+    justify-content: start;
+    align-content: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+.Imagen__Redes {
+    width: 30px;
+    height: 30px;
+}
+#Derechos {
+    margin-left: 0;
+    color: black;
+}
+.Contenedor__Informacion {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    margin-left: 38px;
+    margin-right: 38px;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+}
+.Contenedor__Lista__Informacion {
+    margin: 0;
+    padding: 0;
+}
+h1 {
+    font-size: 6rem;
+    margin-left: 38px;
+    margin-top: 0;
+    margin-bottom: 0; 
+}
+h2 {
+    text-align: start;
+    margin: 0;
+    color: #6c757d;
+}
+p {
+    margin-top: 0; 
+    margin-left: 38px;
+    font-weight: bold;
+    font-size: 1.6rem;
+    color: #6c757d;
+}
+a {
+    text-decoration: none;
+    color: #adb5bd;
+    font-weight: 800;
+    transition: color 0.3s ease, transform 0.3s ease; 
+}
+a:hover {
+    color: #52b788; 
+    transform: translateY(-2px);
+    text-decoration: underline; 
+}
+li {
+    list-style: none;
+}
+strong {
+    color: #52b788;
+}
