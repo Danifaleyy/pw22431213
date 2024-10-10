@@ -1,0 +1,186 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    background-color: transparent;
+    font-family: "Montserrat";
+    color: black;
+    height: 100vh;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 6vh 25vh 60vh auto;
+    /*Definir areas:*/
+    grid-template-areas:
+        "Contenedor__header Contenedor__header Contenedor__header Contenedor__header Contenedor__header"
+        "Contenedor__section Contenedor__section Contenedor__section Contenedor__section Contenedor__section"
+        "Contenedor__main Contenedor__main Contenedor__main Contenedor__main Contenedor__main"
+        "Contenedor__footer Contenedor__footer Contenedor__footer Contenedor__footer Contenedor__footer";
+}
+div, ul, nav, header, footer, a, li, label, body, h1, input {
+    margin: 0;
+    padding: 0;
+}
+/*Items (Hijos)*/
+
+/*Barra de navegacion*/
+.Contenedor__header {
+    grid-area: Contenedor__header;
+    background-color: #000000;
+}
+/*Diseño*/
+.Menu__lista {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    margin-left: 20px;
+}
+.lista___item {
+    list-style: none;
+}
+.lista___item a{
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+}
+#Img__logo {
+    width: 40px;
+    height: 40px;
+}
+.Sublista {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+    margin-right: 40px;
+}
+.Sublista--button {
+    justify-content: end;
+}
+#Button__Submit {
+    font-size: 0.7rem;
+    background-color: #212529;
+    padding: 6px 15px;
+    border: 1px solid white;
+    border-radius: 10px;
+}
+#Button__Sign {
+    font-size: 0.7rem;
+    background-color: #9d4edd;
+    padding: 6px 15px;
+    border: 1px solid white;
+    border-radius: 10px;
+}
+
+
+
+/*Barra de busqueda*/
+.Contenedor__section {
+    grid-area: Contenedor__section;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #9d4edd55;
+}
+/*Diseño*/
+.Contenedor__busqueda {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+#Button__Search {
+    width: 400px;
+    height: 30px;
+    font-family: inherit;
+    box-shadow: 0 0 2px black;
+}
+h1 {
+    font-size: 3rem;
+    color: black;
+    width: auto;
+}
+
+
+
+/*Contenido*/
+.Contenedor__main {
+    grid-area: Contenedor__main;
+    background-color: white;
+    margin: auto;
+    grid-column: 2 / 5;
+}
+/*Diseño*/
+.Contenedor__Temas {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(2,1fr);
+    column-gap: 10px;
+    row-gap: 5px;
+    margin: auto;
+}
+.Tema {
+    font-size: 10px;
+    display: flex;
+    flex-direction: row;
+    column-gap: 10px;
+}
+#Imagen--Contenido {
+    width: 95px;
+    height: 95px;
+}
+.Subteme a {
+    text-decoration: none;
+    font-weight: 100;
+    color: #023e8a;
+}
+.Subteme p {
+    color: #495057;
+}
+
+
+
+
+/*Footer*/
+.Contenedor__footer {
+    grid-area: Contenedor__footer;
+    background-color: #000000;
+    color: white;
+    width: 100%;
+    font-size: 0.7rem;
+    display: flex;
+    gap: 50px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: start;
+}
+/*Diseño*/
+.Contenedor__Seccion--footer {
+    display: flex;
+    flex-direction: row;
+    gap: 100px;
+    justify-content: center;
+    align-items: start;
+    height: auto;
+    width: 100%;
+}
+.Seccion__footer {
+    display: flex;
+    flex-direction: column;
+}
+.Seccion__footer a{
+    color: white;
+    text-decoration: none;
+}
+.Copyrigth {
+    margin-top: 120px;
+}
+#Imagen--Copyrigth {
+    width: 30px;
+    height: 30px;
+}
